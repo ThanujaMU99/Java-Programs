@@ -1,25 +1,31 @@
 class Museum{
 
-String name;
-String location;
-int cost;
-String famousFor;
-
+   String name;
+   String famousFor;
+   String location;
+   int entryCost;
+   
+   
 public Museum(){
-this("Kempegowda Museum","Bangalore",200,"glassed floor");
+this("Visvesvaraya Industrial and Technological Museum","Engine Hall","Bangalore",75);
+
 System.out.println("Museum object is created");
 
-} 
-public Museum(String name,String location,int cost,String famousFor){
-this.name=name;
-this.location=location;
-this.cost=cost;
-this.famousFor=famousFor;
-}
-public void displayMuseum(){
-
-System.out.println(this.name+" "+location+" "+cost+" "+famousFor);
 }
 
+public Museum(String name,String famousFor,String location,int entryCost){
+
+  this.name=name;
+  this.famousFor=famousFor;
+  this.location=location;
+  this.entryCost=entryCost;
+
+}
+
+public void displayDetails(){
+
+System.out.println(this.name+" "+ this.famousFor+" "+this.location+" "+ this.entryCost);
+
+}
 
 }
