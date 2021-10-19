@@ -7,7 +7,7 @@ System.out.println("DrivingLicenseDTO object is created");
 private Long drivingLicenseId;
 private String name;
 private String address;
-private int photo;
+private int amount;
 
 public long getDrivingLicenseId(){
 return drivingLicenseId;
@@ -27,11 +27,20 @@ return address;
 public void setAddress(String address){
 this.address=address;
 }
-public int getPhoto(){
-return photo;
+public int getAmount(){
+return amount;
 } 
-public void setPhoto(int photo){
-this.photo=photo;
+public void setAmount(int amount){
+this.amount=amount;
+}
+@Override
+public String toString(){
+	return "drivingLicenseDTO-[drivingLicenseId="+this.drivingLicenseId+",name="+this.name+",address="+this.address+",amount="+this.amount+"]";
+}
+@Override
+public int hashCode(){
+	return amount;
+	
 }
 
 }

@@ -6,10 +6,10 @@ DrivingLicenseDTO dto = new DrivingLicenseDTO();
 dto.setDrivingLicenseId(234562l);
 dto.setName("Baba");
 dto.setAddress("Bangalore");
-dto.setPhoto(2);
+dto.setAmount(2000);
 
-System.out.println(dto.getDrivingLicenseId()+" "+dto.getName()+" "+dto.getAddress()+ " " +dto.getPhoto());
-
+System.out.println(dto);
+System.out.println(dto.hashCode());
 
 }
 
